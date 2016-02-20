@@ -467,12 +467,13 @@ namespace EAAddinFramework
         /// otConnector		- Connector.ConnectorGUID
         /// </param>
         /// <param name="ot">Specifies the type of the new context item.</param>
-        public virtual void EA_OnNotifyContextItemModified(EA.Repository Repository,string GUID, EA.ObjectType ot){}                                                
+        public virtual void EA_OnNotifyContextItemModified(EA.Repository Repository,string GUID, EA.ObjectType ot) { }
         
+
         #endregion EA Context Item Events
 
         #region EA Model Validation Broadcasts
-        
+
         /// <summary>
         /// EA_OnInitializeUserRules is called on Enterprise Architect start-up and requests that the Add-In provide Enterprise Architect with a rule category and list of rule IDs for model validation.
         /// This function must be implemented by any Add-In that is to perform its own model validation. It must call Project.DefineRuleCategory once and Project.DefineRule for each rule; these functions are described in the Project Interface section.

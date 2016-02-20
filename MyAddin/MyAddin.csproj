@@ -48,7 +48,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.EA">
-      <HintPath>..\..\..\..\..\..\..\Program Files %28x86%29\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyAddinClass.cs" />
-    <Compile Include="MyEAControl.cs" />
+    <Compile Include="MyEAControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MyEAControl.Designer.cs">
       <DependentUpon>MyEAControl.cs</DependentUpon>
     </Compile>
